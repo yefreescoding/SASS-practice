@@ -1,0 +1,78 @@
+@use "../util" as u;
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+h1 {
+  // font-size: calc(16px + 2vw);
+  // font-size: clamp(28px, 16px + 2vw, 40px);
+  font-size: clamp(1.75rem, 1rem + 2vw, 2.5rem);
+}
+
+p {
+  margin-top: 0;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+header {
+  .slogan {
+    text-transform: uppercase;
+    font-size: .8em;
+    color: var(--yellow);
+  }
+  .int-nav-sect {
+    &__events {
+      color: var(--yellow);
+    }
+    &__events:hover {
+      text-decoration: underline;
+      color: white;
+    }
+  }
+}
+
+.headline {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--yellow);
+  font-family: u.$headerFont;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+
+  span {
+    font-weight: 800;
+    font-family: 'Rosaline', cursive;
+    font-size: 3.5rem;
+  }
+}
+
+.main-p {
+  font-size: 1.2rem;
+  text-align: justify;
+  color: var(--text-color);
+}
+
+aside {
+  .title-verse {
+    font-size: 2rem;
+    color: var(--orange);
+  }
+  p {
+    color: var(--orange);
+  }
+}
+
+.slogan-footer {
+  text-transform: uppercase;
+  font-size: .8em;
+  color: var(--yellow);
+}
+
+

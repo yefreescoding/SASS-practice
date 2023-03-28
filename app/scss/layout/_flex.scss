@@ -1,0 +1,63 @@
+@use "../util" as u;
+
+.flex {
+  display: flex;
+}
+
+header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: auto;
+  padding: .8rem;
+  // width: min(100% - 2em, 65em);
+  // width: 100%;
+  //margin-inline: auto;
+
+  nav {
+    //justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    //gap: 1rem;
+
+    @include u.breakpoint(medium) {
+      justify-content: space-around;
+    }
+    
+
+    ul {
+      padding: 0;
+      list-style-type: none;
+      gap: 1.5rem;
+    }
+
+    div {
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+}
+
+footer {
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  
+  ul {
+    padding: 0;
+    list-style-type: none;
+    gap: 1rem;
+  }
+
+  div {
+    width: 100%;
+    gap: 1rem;
+    font-size: .65rem;
+
+    .page-info {
+      text-align: right;
+    }
+  }
+}

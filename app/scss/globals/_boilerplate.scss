@@ -1,0 +1,31 @@
+@use '../util' as u;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+
+  /*
+  border: .5px solid rgb(188, 188, 255);
+  */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: u.$regular;
+  //background-color: var(--background-color);
+  //background: conic-gradient(at 0% 0%, snow, white);
+  background: conic-gradient(from 90deg at 50% 0%, #111, 50%, #222, #111);
+  color: var(--text-color);
+  // display: grid;
+  // justify-content: center;
+}
+
+header {
+  //background-color: var(--background-color);
+  background: conic-gradient(from 90deg at 50% 0%, #111, 50%, #222, #111);
+}
